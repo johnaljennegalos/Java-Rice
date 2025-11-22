@@ -27,7 +27,15 @@ public class GameProject {
     }
 
     public static void main(String[] args) {
+        characters.add(createGameCharacter("Tank", "Elder Titan"));
+        characters.add(createGameCharacter("Marksman", "Elder Miya"));
+        characters.add(createGameCharacter("Mage", "Elder Apparition"));
+        characters.add(createGameCharacter("Fighter", "Elder Fighter"));
 
+
+        for(var character : characters){
+            controlCharacter(character);
+        }
     }
     
 }
