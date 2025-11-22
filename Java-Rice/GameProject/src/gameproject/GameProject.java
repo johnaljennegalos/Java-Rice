@@ -17,6 +17,8 @@ public class GameProject {
             return new Fighter(name);
         } else if(type.equals("Creeps")){
             return new Creeps(name);
+        } else if(type.equals("Assasin")){
+            return new Assasin(name);
         }
 
         return new Tank();
@@ -34,6 +36,7 @@ public class GameProject {
         characters.add(createGameCharacter("Mage", "Elder Apparition"));
         characters.add(createGameCharacter("Fighter", "Elder Fighter"));
         characters.add(createGameCharacter("Creeps", "Dwarf Creeps"));
+        characters.add(createGameCharacter("Assasin", "Stealth Assasin"));
 
 
         for(var character : characters){
