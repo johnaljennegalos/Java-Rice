@@ -1,11 +1,30 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Main.java to edit this template
- */
+
 package gameproject;
+
+import java.util.ArrayList;
 
 
 public class GameProject {
+
+    public static ArrayList<GameCharacter> characters = new ArrayList<>();
+
+    public static GameCharacter createGameCharacter(String type, String name){
+        if(type.equals("Marksman")){
+            return new Marksman(name);
+        } else if(type.equals("Mage")){
+            return new Mage(name);
+        } else if(type.equals("Fighter")){
+            return new Fighter(name);
+        }
+
+        return new Tank();
+    }
+
+    public static void controlCharacter(GameCharacter character){
+        character.attack();
+        character.defend();
+        character.specialSkill();
+    }
 
     public static void main(String[] args) {
 
