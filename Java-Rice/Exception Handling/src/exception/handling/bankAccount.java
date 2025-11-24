@@ -12,10 +12,10 @@ public class bankAccount {
             int withdraw = sc.nextInt();
 
             if(withdraw > bal){
-                throw new Exception("Insufficient funds!");
+                throw new InsufficientFundsException("Insufficient funds!");
             } else if(withdraw < 0){
 
-                throw new Exception("Invalid Transaction Amount!");
+                throw new InvalidTransactionException("Invalid Transaction Amount!");
             }
 
             bal -= withdraw;
