@@ -9,8 +9,11 @@ public class ExceptionHandling {
 //        bankAccount bank =  new bankAccount();
 //        bank.withdraw();
 
-        userRegistration user = new userRegistration();
-        user.register();
+//        userRegistration user = new userRegistration();
+//        user.register();
+
+//        basicCalculator calculator = new basicCalculator();
+//        calculator.calculate();
     }
     
 }
